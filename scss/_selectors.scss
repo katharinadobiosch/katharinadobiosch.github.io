@@ -17,29 +17,59 @@ body {
 
 /* #region MOBILE =========================================== */
 @media screen and (max-width: 767px) {
-    .line {
-        position: relative;
-        overflow: hidden;
-        width: 100vw;
-        height: 10px;
-        background: $background-color;
-        z-index: 100;
-    }
-
     .slide {
+        overflow: hidden;
         position: absolute;
-        left: -800px;
         width: 100vw;
         height: 5px;
         background: $pink-color;
-        transition: 1s;
         z-index: 100;
+        animation: loader 1s ease;
     }
 
-    .line:active .slide {
-        transition: 1s;
-        left: 0;
-        z-index: 100;
+    @keyframes loader {
+        0% {
+            width: 0;
+        }
+
+        20% {
+            width: 10%;
+        }
+
+        25% {
+            width: 24%;
+        }
+
+        43% {
+            width: 41%;
+        }
+
+        56% {
+            width: 50%;
+        }
+
+        66% {
+            width: 52%;
+        }
+
+        71% {
+            width: 60%;
+        }
+
+        75% {
+            width: 76%;
+        }
+
+        94% {
+            width: 86%;
+        }
+
+        99% {
+            width: 99%;
+        }
+        100% {
+            width: 0%;
+        }
     }
 
     .grid-container {
@@ -422,27 +452,59 @@ body {
 
 // === TABLET ===
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .line {
-        position: relative;
-        overflow: hidden;
-        width: 100vw;
-        height: 10px;
-        background: $background-color;
-        z-index: 100;
-    }
-
     .slide {
+        overflow: hidden;
         position: absolute;
-        left: -1024px;
         width: 100vw;
         height: 5px;
         background: $pink-color;
-        transition: 1s;
+        z-index: 100;
+        animation: loader 1s ease;
     }
 
-    .line:active .slide {
-        transition: 1s;
-        left: 0;
+    @keyframes loader {
+        0% {
+            width: 0;
+        }
+
+        20% {
+            width: 10%;
+        }
+
+        25% {
+            width: 24%;
+        }
+
+        43% {
+            width: 41%;
+        }
+
+        56% {
+            width: 50%;
+        }
+
+        66% {
+            width: 52%;
+        }
+
+        71% {
+            width: 60%;
+        }
+
+        75% {
+            width: 76%;
+        }
+
+        94% {
+            width: 86%;
+        }
+
+        99% {
+            width: 99%;
+        }
+        100% {
+            width: 0%;
+        }
     }
     .grid-container {
         display: grid;
@@ -827,29 +889,60 @@ body {
 // === DESKTOP ===
 
 @media screen and (min-width: 1025px) {
-    .line {
-        position: relative;
-        overflow: hidden;
-        width: 100vw;
-        height: 10px;
-        background: $background-color;
-        z-index: 100;
-    }
-
     .slide {
+        overflow: hidden;
         position: absolute;
-        left: -1025px;
         width: 100vw;
         height: 5px;
         background: $pink-color;
-        transition: 1s;
+        z-index: 100;
+        animation: loader 1s ease;
     }
 
-    .line:active .slide {
-        transition: 1s;
-        left: 0;
-    }
+    @keyframes loader {
+        0% {
+            width: 0;
+        }
 
+        20% {
+            width: 10%;
+        }
+
+        25% {
+            width: 24%;
+        }
+
+        43% {
+            width: 41%;
+        }
+
+        56% {
+            width: 50%;
+        }
+
+        66% {
+            width: 52%;
+        }
+
+        71% {
+            width: 60%;
+        }
+
+        75% {
+            width: 76%;
+        }
+
+        94% {
+            width: 86%;
+        }
+
+        99% {
+            width: 99%;
+        }
+        100% {
+            width: 0%;
+        }
+    }
     .grid-container {
         display: grid;
 
@@ -958,20 +1051,27 @@ body {
     .container-images {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        // border: $test-border;
+        justify-content: space-around;
         width: 80vw;
+
+        // ANIMATION
+        transition: transform 2s;
+    }
+
+    .container-images:hover {
+        transform: scale(10);
     }
 
     .img-container {
-        display: inline-block;
+        justify-content: flex-start;
+        // display: inline-block;
         position: relative;
         width: 300px;
         height: 300px;
         overflow: hidden;
         border-radius: 50%;
         margin-bottom: 50px;
-        padding-right: 50px;
+        // padding-right: 50px;
         z-index: -100;
 
         // border: 3px solid orange;
