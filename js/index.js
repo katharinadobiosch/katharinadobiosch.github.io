@@ -1,26 +1,37 @@
 "use strict";
 
-const modal = document.querySelector(".modal");
-const clickImage = document.querySelector("img");
-console.log(clickImage);
+const modal1 = document.querySelector("#modal-1");
+const modal2 = document.querySelector("#modal-2");
+const modal3 = document.querySelector("#modal-3");
+
+const clickProj1 = document.querySelector("#proj-1");
+const clickProj2 = document.querySelector("#proj-2");
+const clickProj3 = document.querySelector("#proj-3");
+
+console.log(clickProj1);
 
 const close = document.querySelector("close");
 
 const openModal = () => {
-    modal.style.display = "block";
+    modal1.style.display = "block";
+    // modal2.style.display = "block";
+    // modal3.style.display = "block";
 };
 
-modal.addEventListener("click", (event) => {
+modal1.addEventListener("click", (event) => {
     switch (event.target.className) {
         case "close":
         case "modal":
-            modal.style.display = "none";
+            modal1.style.display = "none";
             break;
     }
     console.log("image was clicked");
 });
 
-clickImage.addEventListener("click", openModal);
+clickProj1.addEventListener("click", openModal);
+clickProj2.addEventListener("click", openModal);
+clickProj3.addEventListener("click", openModal);
+
 // console.log("image was clicked", openModal);
 
 // // HIDE MENU AFTER CLICKING
