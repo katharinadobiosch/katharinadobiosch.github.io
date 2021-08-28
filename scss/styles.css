@@ -233,7 +233,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     margin-right: 30px;
-    z-index: 300;
+    z-index: 500;
     -webkit-user-select: none;
     user-select: none; }
     #menuToggle input {
@@ -243,7 +243,7 @@ body {
       height: 50px;
       opacity: 0;
       /* hidden checkbox */
-      z-index: 20;
+      z-index: 999;
       /* and place it over the hamburger */ }
     #menuToggle a {
       text-decoration: none;
@@ -264,7 +264,7 @@ body {
     position: relative;
     background: #baafc0;
     border-radius: 3px;
-    z-index: 300;
+    z-index: 999;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
 
@@ -329,7 +329,39 @@ Ohyeah and the last one should go the other direction
 And let's slide it in from the left
 */
   #menuToggle input:checked ~ ul {
-    transform: none; } }
+    transform: none; }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4); }
+
+  .modal-content {
+    background-color: #23262e;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; }
+
+  .close {
+    color: #ffe66d;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -1%; }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer; } }
 /* #endregion */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .slide {
@@ -553,7 +585,7 @@ And let's slide it in from the left
     flex-direction: column;
     align-items: flex-end;
     margin-right: 30px;
-    z-index: 300;
+    z-index: 500;
     -webkit-user-select: none;
     user-select: none; }
     #menuToggle input {
@@ -563,7 +595,7 @@ And let's slide it in from the left
       height: 50px;
       opacity: 0;
       /* hidden checkbox */
-      z-index: 20;
+      z-index: 999;
       /* and place it over the hamburger */ }
     #menuToggle a {
       text-decoration: none;
@@ -584,7 +616,7 @@ And let's slide it in from the left
     position: relative;
     background: #baafc0;
     border-radius: 3px;
-    z-index: 300;
+    z-index: 999;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
 
@@ -650,7 +682,39 @@ Ohyeah and the last one should go the other direction
 And let's slide it in from the left
 */
   #menuToggle input:checked ~ ul {
-    transform: none; } }
+    transform: none; }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4); }
+
+  .modal-content {
+    background-color: #23262e;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; }
+
+  .close {
+    color: #ffe66d;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -1%; }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer; } }
 @media screen and (min-width: 1025px) {
   .slide {
     overflow: hidden;
@@ -874,7 +938,7 @@ And let's slide it in from the left
     flex-direction: column;
     align-items: flex-end;
     margin-right: 30px;
-    z-index: 300;
+    z-index: 500;
     -webkit-user-select: none;
     user-select: none; }
     #menuToggle input {
@@ -884,7 +948,7 @@ And let's slide it in from the left
       height: 50px;
       opacity: 0;
       /* hidden checkbox */
-      z-index: 20;
+      z-index: 999;
       /* and place it over the hamburger */ }
     #menuToggle a {
       text-decoration: none;
@@ -905,7 +969,7 @@ And let's slide it in from the left
     position: relative;
     background: #baafc0;
     border-radius: 3px;
-    z-index: 300;
+    z-index: 999;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
 
